@@ -1,0 +1,14 @@
+.vscode
+data
+
+finetune/__pycache__
+finetune/output
+
+preprocess/__pycache__
+
+pretrain/__pycache__
+pretrain/output
+
+nohup.out
+
+G4RegFormer.md
