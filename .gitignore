@@ -9,6 +9,6 @@ downstream/G4RegCRE/output
 
 **/__pycache__/
 pretrain/output/
-pretrain/visualization/output/
+pretrain/visualization/visualization_output
 
 nohup.out
