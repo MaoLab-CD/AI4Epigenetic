@@ -30,28 +30,3 @@ G4RegFormer/
     ├── downstream_G4RegCRE.md
     └── downstream_CRERegGene.md
 ```
-
-## Data preprocessing
-
-```bash
-/home/afan/anaconda3/bin/python preprocess/preprocess_pretrain_bin.py --bin-size 1000
-
-/home/afan/anaconda3/bin/python preprocess/preprocess_downstream_G4RegCRE.py \
-  --control-dir <control_multiomics> \
-  --perturbed-dir <perturbed_multiomics> \
-  --hic-interactions <loops.bedpe.gz>
-
-/home/afan/anaconda3/bin/python preprocess/preprocess_downstream_CRERegGene.py
-```
-
-CRERegGene 会优先复用已存在的 G4 区域文件；增加 `--rebuild-g4-regions` 时需要先提供正式 CT-TADB 边界结果。
-
-## Training
-
-```bash
-bash pretrain/train_pretrain.sh
-bash downstream/4RegCRE/train.sh
-bash downstream/CRERegGene/train.sh
-```
-
-详细的数据定义、模型结构、损失和结果解释见 `Notes/`。训练输出只写入各任务自己的 `output/`，预训练可视化结果只写入 `pretrain/visualization/visualization_output/`。
