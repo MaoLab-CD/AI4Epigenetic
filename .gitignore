@@ -1,14 +1,14 @@
 .vscode
 data
 
-finetune/__pycache__
-finetune/output
+downstream/CRERegGene/output
+downstream/G4RegCRE/output
 
-preprocess/__pycache__
+/mnt/afan/G4RegFormer/Notes
 
-pretrain/__pycache__
-pretrain/output
+
+**/__pycache__/
+pretrain/output/
+pretrain/visualization/output/
 
 nohup.out
-
-G4RegFormer.md
