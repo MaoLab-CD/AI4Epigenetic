@@ -4,11 +4,11 @@ data
 downstream/CRERegGene/output
 downstream/G4RegCRE/output
 
-/mnt/afan/G4RegFormer/Notes
+/mnt/afan/G4RegFormer/Notes/
 
 
 **/__pycache__/
 pretrain/output/
-pretrain/visualization/visualization_output
+pretrain/visualization/visualization_output/
 
 nohup.out
